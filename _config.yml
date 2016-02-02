@@ -7,4 +7,5 @@ email:
 author: Faisal Hakim
 description: My awesome new site
 paginate: 3
+permalink: /:title
 google_analytics: 
