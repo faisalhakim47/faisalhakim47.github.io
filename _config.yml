@@ -1,0 +1,10 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://faisalhakim47.github.io
+title: Awesome
+email: 
+author: Faisal Hakim
+description: My awesome new site
+paginate: 3
+google_analytics: 
