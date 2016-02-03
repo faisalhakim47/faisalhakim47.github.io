@@ -1,6 +1,7 @@
 ---
 published: true
-title: asc
+title: This is the example title
 layout: post
+permalink: date
 ---
-saf
+Some text goes here
