@@ -1,6 +1,0 @@
----
-published: true
-title: This is the example title
-layout: post
----
-Some text goes here
