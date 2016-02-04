@@ -2,21 +2,55 @@
 layout: default
 ---
 
-<div class="home">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>{{ site.title }} &#8211; {{ site.author }}</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="author" content="{{ site.author }}">
+	
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> 
+	
+	<!-- Assets -->
+	<link rel="icon" href="/favicon.ico?v=1">
+	<style type="text/css">
+		{% capture include_to_scssify %}
+			{% include css/index.scss %}
+		{% endcapture %}
+		{{ include_to_scssify | scssify }}
+	</style>
+</head>
 
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+<body>
+	<div class="container">
+		
+		<header>
+			<h1>{{ site.title }}</h1>
+		</header>
+		
+		<table>
+			{% for post in paginator.posts %}
+			<tbody class="post">
+				<tr>
+					<td class="post-date">{{ post.date | date: "%-d %b %Y" }}</td>
+					<td><h2 class="h2 post-title"><a href="{{ post.url | prepend: site.baseurl }}" class="post-link">{{ post.title }}</a></h2></td>
+				</tr>
+				{% if post.summary %}
+				<tr>
+					<td colspan="2">{{ post.summary }}</td>
+				</tr>
+				{% endif post.summary %}
+			</tbody>
+			
+			{% endfor %}
+		</table>
 
-  {% include pagination.html %}
+		{% include pagination.html %}
+		
+	</div>
+</body>
 
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-</div>
+

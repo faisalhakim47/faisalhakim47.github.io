@@ -1,0 +1,37 @@
+@import "default";
+
+table {
+    width: 100%;
+}
+
+.post-title {
+    margin: 0.25rem;
+}
+
+.post-link {
+    color: #222;
+    text-decoration: none;
+}
+
+.post:hover .post-link {
+    text-decoration: underline;
+}
+
+.post td {
+    padding: 0 1rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.pagination > div > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pagination > div > span:hover {
+    cursor: default;
+}

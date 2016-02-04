@@ -2,6 +2,5 @@
 published: true
 title: This is the example title
 layout: post
-permalink: date
 ---
 Some text goes here

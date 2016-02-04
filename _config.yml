@@ -1,11 +1,15 @@
 excerpt_separator: ""
-pygments: true
+highlighter: true
 markdown: kramdown
 url: http://faisalhakim47.github.io
-title: Awesome
+title: efbrain
 email: 
 author: Faisal Hakim
-description: My awesome new site
+description: I write what you read.
 paginate: 3
-permalink: /:title
+permalink: /blog/:categories/:title
 google_analytics: 
+gems: [jekyll-paginate]
+sass:
+  style: compressed
+  sass_dir: _sass
