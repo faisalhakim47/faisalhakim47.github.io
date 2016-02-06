@@ -6,8 +6,8 @@ title: efbrain
 email: 
 author: Faisal Hakim
 description: I write what you read.
-paginate: 3
-permalink: /blog/:categories/:title
+paginate: 7
+permalink: /blog/:title
 google_analytics: 
 gems: [jekyll-paginate]
 sass:
