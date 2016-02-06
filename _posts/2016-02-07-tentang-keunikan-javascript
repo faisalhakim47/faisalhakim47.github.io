@@ -1,3 +1,13 @@
+---
+layout: post
+title: Tentang Keunikan Javascript
+author: Faisal Hakim
+categories: id
+tags:
+- programing language
+- info
+---
+
 Javascript adalah bahasa pemprograman yang sangat menarik. Bahasa ini dibuat dalam waktu yang sangat singkat, bahakan terkesan tergesa-gesa. Dirancang oleh Brendan Eich selama sepuluh hari untuk browser Netscape. Kesuksesan Javascript sangat tidak terduga, mengalahkan bahasa Java yang digadang-gadang menjadi bahasa pemprograman utama pada waktu itu.[^wikipedia] 
 
 ## Java vs. Javascript
@@ -5,7 +15,5 @@ Javascript adalah bahasa pemprograman yang sangat menarik. Bahasa ini dibuat dal
 Ingat Javascript dan Java adalah dua bahasa pemprograman yang sangat berbeda, sama sekali tidak ada keterkaitan. Javascript awalnya diberi nama Livescript. Berubahnya nama ke Javascript dikarenakan kepopuleran Java itu sendiri, dan kebetulan pula saat itu Netscape mengeluarkan fitur untuk mendukung teknologi Java Aplet pada browsernya.[^wikipedia]
 
 ## Javascript adalah bahasa yang diremehkan?
-
-
 
 [^wikipedia]: http://en.wikipedia.org/wiki/Javascript, pada hari Sabtu, 6 Fabruari 2015
