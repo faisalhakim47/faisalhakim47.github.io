@@ -1,58 +1,105 @@
 @import "default";
 
 @media (min-width:480px) {
-    .post {
-        font-size: 1.05rem;
-    }
+	.post {
+		font-size: 1.05rem;
+	}
 }
 
 @media (min-width:680px) {
-    .post {
-        font-size: 1.15rem;
-    }
+	.post {
+		font-size: 1.15rem;
+	}
 }
-/*3A4145*/
-.post {
-    line-height: 1.8;
-    padding: 2rem 0;
 
-    blockquote {
-        border-left: 3px solid #222;
-        font-style: italic;
-        padding-left: 1.8rem;
-    }
-    blockquote footer:before {
-        content: '— ';
-    }
-    blockquote footer {
-        color: #555;
-        font-style: normal;
-    }
-    blockquote footer cite {
-        font-style: italic;
-    }
+#header {
+	background-color: white;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	transition-duration: 300ms;
+	width: 80%;
+	max-width: 680px;
+	min-width: 300px;
+}
+
+.title {
+	font-size: 1.6em;
+	font-weight: 700;
+}
+
+.nav {
+	font-family: monospace;
+	font-size: 0.85em;
+	display: flex;
+	flex-flow: row wrap;
+	list-style: none;
+	margin: 0;
+}
+
+.nav > li {
+	border: 1px solid $color-secondary-2-3;
+	cursor: pointer;
+	margin: 0 2.5px;
+	padding: 3px 12px;
+}
+
+.nav > li:hover {
+	background-color: $color-secondary-2-1;
+}
+
+#default:after {
+	content: 'px';
+}
+
+#content {
+	margin-top: 64px;
+}
+
+.post {
+	line-height: 1.8;
+	padding: 2rem 0;
+
+	blockquote {
+		border-left: 3px solid #222;
+		font-style: italic;
+		padding-left: 1.8rem;
+	}
+	blockquote footer:before {
+		content: '— ';
+	}
+	blockquote footer {
+		color: #555;
+		font-style: normal;
+	}
+	blockquote footer cite {
+		font-style: italic;
+	}
 }
 
 .post-date {
-    color: #444;
-    font-size: 0.9rem;
+	color: #444;
+	font-size: 0.9rem;
 }
 
 .post-title {
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 2rem;
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 2rem;
 }
 
 .footnotes:before {
-    border-bottom: 0.5pt solid #111;
-    content: '';
-    display: block;
-    margin-top: 25px;
-    width: 100%;
+	border-bottom: 0.5pt solid #111;
+	content: '';
+	display: block;
+	margin-top: 25px;
+	width: 100%;
 }
 
 .footnotes {
-    color: #444;
-    font-size: 0.85em;
+	color: #444;
+	font-size: 0.85em;
 }
