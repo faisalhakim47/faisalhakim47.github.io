@@ -43,3 +43,16 @@
     margin-top: 0;
     margin-bottom: 2rem;
 }
+
+.footnotes:before {
+    border-bottom: 0.5pt solid #111;
+    content: '';
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.footnotes {
+    color: #444;
+    font-size: 0.85em;
+}
