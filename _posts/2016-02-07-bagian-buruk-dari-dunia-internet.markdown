@@ -3,7 +3,9 @@ layout: post
 title: Bagian Buruk dari Dunia Internet
 author: Faisal Hakim
 categories: id
-tags: id opini
+tags: 
+- id 
+- opini
 ---
 
 ## Kebencian

@@ -1,4 +1,13 @@
-
+---
+layout: post
+title: Tentang Keunikan Javascript
+author: Faisal Hakim
+categories: en
+tags:
+- bahasa pemprograman
+- javascript
+- info
+---
 
 Javascript adalah bahasa pemprograman yang sangat menarik. Bahasa ini dibuat dalam waktu yang sangat singkat, bahakan terkesan tergesa-gesa. Dirancang oleh Brendan Eich selama sepuluh hari untuk browser Netscape. Kesuksesan Javascript sangat tidak terduga, mengalahkan bahasa Java yang digadang-gadang menjadi bahasa pemprograman utama pada waktu itu.[^wikipedia] 
 
