@@ -60,15 +60,15 @@ layout: default
 	  <div class="left">
 		{% if paginator.previous_page %}
 		  {% if paginator.page == 2 %}
-			<a class="pagination-item" href="{{ site.baseurl }}/">Newer</a>
+			<a class="pagination-item" href="{{ site.baseurl }}/#recent-post">« Newer</a>
 		  {% else %}
-			<a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.previous_page}}/">Newer</a>
+			<a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.previous_page}}/#recent-post">« Newer</a>
 		  {% endif %}
 		{% endif %}
 	  </div>
 	  <div class="right">
 		{% if paginator.next_page %}
-		  <a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.next_page}}/">Older</a>
+		  <a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.next_page}}/#recent-post">Older »</a>
 		{% endif %}
 	  </div>
 	</div>

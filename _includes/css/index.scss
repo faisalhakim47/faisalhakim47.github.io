@@ -82,7 +82,13 @@ table td {
     margin: 2.5rem 0 5rem;
 }
 
+.pagination > div > a {
+    color: #222;
+		text-decoration: none;
+}
+
 .pagination > div > a:hover {
+		color: $color-secondary-2-2;
     cursor: pointer;
     text-decoration: underline;
 }
