@@ -7,7 +7,7 @@ email:
 author: Faisal Hakim
 description: I write what you read.
 paginate: 7
-permalink: /blog/:title
+permalink: /:title
 google_analytics: 
 gems: [jekyll-paginate]
 sass:

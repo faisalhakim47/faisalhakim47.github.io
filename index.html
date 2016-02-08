@@ -37,41 +37,6 @@ layout: default
 			<div class="author-description">an webapp developer. Known as <em>faisalhakim47</em> on Internet.</div>
 		</div>
 	</header>
-	<div id="recent-post" class="sparator">
-		Recent Posts
-	</div>
-	<table>
-		{% for post in paginator.posts %}
-		<tbody class="post">
-			<tr>
-				<td><h2 class="h2 post-title"><a href="{{ post.url | prepend: site.baseurl }}" class="post-link">{{ post.title }}</a></h2></td>
-			</tr>
-			{% if post.summary %}
-			<tr>
-				<td colspan="2">{{ post.summary }}</td>
-			</tr>
-			{% endif post.summary %}
-		</tbody>
-
-		{% endfor %}
-	</table>
-
-	<div class="pagination">
-	  <div class="left">
-		{% if paginator.previous_page %}
-		  {% if paginator.page == 2 %}
-			<a class="pagination-item" href="{{ site.baseurl }}/#recent-post">« Newer</a>
-		  {% else %}
-			<a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.previous_page}}/#recent-post">« Newer</a>
-		  {% endif %}
-		{% endif %}
-	  </div>
-	  <div class="right">
-		{% if paginator.next_page %}
-		  <a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.next_page}}/#recent-post">Older »</a>
-		{% endif %}
-	  </div>
-	</div>
 
 	<script>
 		(function(document){
